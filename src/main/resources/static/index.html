@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat Room</title>
+
+</head>
+<body>
+<div id="name-form">
+    <div id="input-group">
+        <input type="text" placeholder="Enter your name" id="username" name="username">
+        <div>
+            <button id="login">Enter</button>
+        </div>
+    </div>
+</div>
+<div>
+
+    <div>
+        <input type="text" placeholder="Enter your message" id="message-value" name="message-value">
+        <div>
+            <button id="send-btn">Send</button>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+</div>
+
+<div id="message-container">
+    <!-- Messages will be appended here -->
+</div>
+
+
+<script src="/script.js"></script>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+
+</body>
+</html>
